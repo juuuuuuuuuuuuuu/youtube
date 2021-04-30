@@ -5,110 +5,128 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YouTube</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/a83d827437.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <!-- 헤더 -->
-    <header class="header">
-      <div class="logo">
-        <i class="fab fa-youtube"></i>
-        <p>YouTube</p>
-      </div>
-      <div class="button_info">
-        <i class="fas fa-search"></i>
-        <i class="fas fa-ellipsis-v"></i>
-      </div>
-    </header>
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="logo">
+      <i class="fab fa-youtube"></i>
+      <span>YouTube</span>
+    </div>
+    <div class="button_info">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-ellipsis-v"></i>
+    </div>
+  </header>
 
-    <!-- 비디오 영역 -->
-    <div class="video">
-      <video src=""></video>
+  <!-- 비디오 영역 -->
+  <section class="video">
+    <video width="350" height="250">
+      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- 비디오 정보 -->
+  <section class="video_info">
+    <!-- 텍스트 영역 -->
+    <div class="text_container">
+      <ul class="hash_tag">
+        <li>#하트시그널</li>
+        <li>#두근두근</li>
+        <li>#첫방송</li>
+      </ul>
+      <div class="title">
+        <span>하트시그널 다시보기 / 하트시그널2 / 2018년 11월 30일 첫방송 / 하트시그널 1화 ~ 10화까지 정주행 / 꿀잼보장 / 다시보기 / 정주행</span>
+        <button><i class="fas fa-caret-down"></i></button>
+      </div>
+      <div class="viewers">
+        <span>1M viewers 1 months ago</span>
+      </div>
     </div>
 
-    <!-- 비디오 정보 -->
-    <div class="video_info">
-      <!-- 텍스트 영역 -->
-      <div class="text_container">
-        <span class="hash_tag">
-          <p>#하트시그널</p>
-          <p>#두근두근</p>
-          <p>#첫방송</p>
-        </span>
-        <p class="title">
-          하트시그널 다시보기 / 하트시그널2 / 2018년 11월 30일 첫방송 / 하트시그널 1화 ~ 10화까지 정주행 / 꿀잼보장 / 다시보기 / 정주행
-        </p>
-        <div class="viewers">
-          1M viewers 1 months ago
-        </div>
-      </div>
-
-      <!-- 액션 아이콘 -->
-      <ul class="action_icon">
-        <li>
+    <!-- 액션 아이콘 -->
+    <ul class="action_icon">
+      <li>
+        <button>
           <i class="far fa-thumbs-up"></i>
-          <p>1K</p>
-        </li>
-        <li>
+          <span>1K</span>
+        </button>
+      </li>
+      <li>
+        <button>
           <i class="far fa-thumbs-down"></i>
-          <p>0</p>
-        </li>
-        <li>
+          <span>0</span>
+        </button>
+      </li>
+      <li>
+        <button>
           <i class="fas fa-share"></i>
-          <p>Share</p>
-        </li>
-        <li>
+          <span>Share</span>
+        </button>
+      </li>
+      <li>
+        <button>
           <i class="fas fa-plus"></i>
-          <p>Save</p>
-        </li>
-        <li>
+          <span>Save</span>
+        </button>
+      </li>
+      <li>
+        <button>
           <i class="fas fa-flag"></i>
-          <p>Report</p>
-        </li>
-      </ul>
+          <span>Report</span>
+        </button>
+      </li>
+    </ul>
 
-      <!-- 채널정보 -->
-      <div class="channel_info">
-        <div class="avatar">
-          <img src="https://avatars.githubusercontent.com/u/30399546?v=4"/>
-        </div>
-        <div class="name">
-          하트시그널
-          <span>1M Subscribers</span>
-        </div>
-        <div class="subscribe_button">
-          <button>SUBSCRIBE</button>
-        </div>
+    <!-- 채널정보 -->
+    <div class="channel_info">
+      <div class="avatar">
+        <img src="https://avatars.githubusercontent.com/u/30399546?v=4"/>
       </div>
-
-      <!-- 비디오 리스트 -->
-      <ul class="video_list">
-        <li>
-          <img src="https://i.ytimg.com/vi/DtJTUrSewyM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA57yehRfNfgkHvKAXaubPsL7mG0A"/>
-          <div class="video_info">
-            <span class="title">하트시그널 1화보기 / 하트시그널 다시보기 / 전체 full공개 / 또봐요 또봐요 / 정주행</span>
-            <span>하트시그널</span>
-            <span>12K viewers</span>
-          </div>
-        </li>
-        <li>
-          <img src="https://i.ytimg.com/vi/DtJTUrSewyM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA57yehRfNfgkHvKAXaubPsL7mG0A"/>
-          <div class="video_info">
-            <span class="title">하트시그널 2화보기 / 하트시그널 다시보기 / 전체 full공개 / 또봐요 또봐요 / 정주행</span>
-            <span>하트시그널</span>
-            <span>12K viewers</span>
-          </div>
-        </li>
-        <li>
-          <img src="https://i.ytimg.com/vi/DtJTUrSewyM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA57yehRfNfgkHvKAXaubPsL7mG0A"/>
-          <div class="video_info">
-            <span class="title">하트시그널 3화보기 / 하트시그널 다시보기 / 전체 full공개 / 또봐요 또봐요 / 정주행</span>
-            <span>하트시그널</span>
-            <span>12K viewers</span>
-          </div>
-        </li>
-      </ul>
+      <div class="name">
+        <span>하트시그널</span>
+        <span>1M Subscribers</span>
+      </div>
+      <div class="subscribe_button">
+        <button>subscribe</button>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- 비디오 리스트 -->
+  <section >
+    <div><span>Up Next</span></div>
+    <ul class="video_list">
+      <li>
+        <img src="https://i.ytimg.com/vi/DtJTUrSewyM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA57yehRfNfgkHvKAXaubPsL7mG0A"/>
+        <div class="video_info">
+          <div class="title"><span>하트시그널 1화보기 / 하트시그널 다시보기 / 전체 full공개 / 또봐요 또봐요 / 정주행</span></div>
+          <div><span>하트시그널</span></div>
+          <div><span>12K viewers</span></div>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </li>
+      <li>
+        <img src="https://i.ytimg.com/vi/DtJTUrSewyM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA57yehRfNfgkHvKAXaubPsL7mG0A"/>
+        <div class="video_info">
+          <div class="title"><span>하트시그널 1화보기 / 하트시그널 다시보기 / 전체 full공개 / 또봐요 또봐요 / 정주행</span></div>
+          <div><span>하트시그널</span></div>
+          <div><span>12K viewers</span></div>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </li>
+      <li>
+        <img src="https://i.ytimg.com/vi/DtJTUrSewyM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA57yehRfNfgkHvKAXaubPsL7mG0A"/>
+        <div class="video_info">
+          <div class="title"><span>하트시그널 1화보기 / 하트시그널 다시보기 / 전체 full공개 / 또봐요 또봐요 / 정주행</span></div>
+          <div><span>하트시그널</span></div>
+          <div><span>12K viewers</span></div>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </li>
+    </ul>
+  </section>
 </body>
 </html>
