@@ -1,0 +1,93 @@
+:root {
+  /* color */
+  --purple-color: #5B36AC;
+  --charcoalGrey-color: #464052;
+  --charcoalGrey-two-color: #363A42;
+  --black-color: #000000;
+  --white-color: #FFFFFF;
+  --coolGrey-color: #A4A6B0;
+  --pale-color: #F9F9FB;
+  --balck10-color: #000000;
+
+  /* font size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 10px;
+
+  /* spacing */
+  --spacing: 0.1px;
+  --padding: 14px;
+  --margin: 8px;
+}
+
+@font-face {
+  font-family: AppleSDGothicNeoM;
+  src: url('font/AppleSDGothicNeoM.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: AppleSDGothicNeo, Semibold;
+  background-color: var(--pale-color);
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  font-size: var(--font-large);
+  padding: var(--padding);
+}
+
+header .left {
+  margin-left: var(--margin);
+}
+
+header .right {
+  margin-right: var(--margin);
+}
+
+header .right .fa-image{
+  margin-right: var(--margin);
+}
+
+.content li {
+  margin: var(--margin);
+  display: flex;
+  align-items: flex-end;
+}
+
+.content .chat_info {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  padding: 11px;
+  font-size: var(--font-medium);
+  box-shadow: 1px 1px 5px var(--coolGrey-color);
+  margin-right: var(--margin);
+}
+
+.content li .date {
+  font-size: var(--font-small);
+  color: var(--coolGrey-color);
+}
+
+.content .you {
+  float: right;
+  clear: both;
+}
+
+
+
+
+
