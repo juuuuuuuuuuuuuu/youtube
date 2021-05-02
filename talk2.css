@@ -10,6 +10,7 @@
   --balck10-color: #000000;
 
   /* font size */
+  --font-xlarge: 24px;
   --font-large: 18px;
   --font-medium: 14px;
   --font-small: 10px;
@@ -40,29 +41,71 @@ ul {
   list-style: none;
 }
 
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+textarea {
+  border: none;
+  width: 100%;
+  height: auto;
+  line-height : normal;
+  padding: .8em .5em;
+  font-family: inherit;
+  border-radius: 0;
+  outline-style: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+}
+
 header {
-  display: flex;
-  justify-content: space-between;
+
   background-color: var(--purple-color);
   color: var(--white-color);
   font-size: var(--font-large);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
   padding: var(--padding);
 }
 
-header .left {
+.header .left {
   margin-left: var(--margin);
 }
 
-header .right {
+.header .right {
   margin-right: var(--margin);
 }
 
-header .right .fa-image{
+.header .right .fa-image{
   margin-right: var(--margin);
+}
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+}
+
+.gallery li {
+  flex-shrink: 0;
+}
+
+.sprite {
+	background: url('img/css_sprites.png') no-repeat -126px -32px;
+	width: 518px;
+	height: 518px;
+  zoom: .1;
+  border-radius: 50px;
 }
 
 .content li {
-  margin: var(--margin);
+  margin: var(--padding);
   display: flex;
   align-items: flex-end;
 }
@@ -83,9 +126,42 @@ header .right .fa-image{
 }
 
 .content .you {
-  float: right;
-  clear: both;
+  flex-direction: row-reverse;
 }
+
+.content .you .chat_info {
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  margin-left: var(--margin);
+  margin-right: 0;
+}
+
+.chat_input {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+}
+
+.chat_input .input {
+  flex-basis: 90%;
+  border-radius: 100px;
+  background-color: var(--white-color);
+  margin: var(--margin);
+  box-shadow: 1px 1px 5px var(--coolGrey-color);
+}
+
+.chat_input .send {
+  flex-basis: 10%;
+  font-size: var(--font-xlarge);
+  margin: var(--margin);
+  border-radius: 100%;
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  padding: var(--padding);
+}
+
+
 
 
 
