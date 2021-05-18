@@ -1,0 +1,229 @@
+:root {
+  /*  color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /* size */
+  --spacing: 12px;
+  --avatar-size: 36px;
+  --max-width: 1000px;
+
+  /* font size */
+  --font-large: 20px;
+  --font-regular: 16px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/*  헤더 */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: calc(var(--spacing) / 2);
+  background-color: var(--black-color);
+}
+
+header .logo i {
+  font-size: var(--font-large);
+  color: var(--red-color);
+}
+
+header .logo span {
+  font-size: var(--font-regular);
+  color: var(--white-color);
+}
+
+header .button_info i {
+  color: var(--white-color);
+}
+
+header .button_info .fa-search {
+  margin-right: 10px;
+}
+
+/* 비디오 영역 */
+.video {
+  background-color: var(--black-color);
+  position: sticky;
+  top: 0;
+}
+
+.video .player {
+  width: 100%;
+  height: 100%;
+  max-width: var(--max-width);
+}
+
+/* 비디오 정보 */
+.video_info .text_container .hash_tag {
+  display: flex;
+  color: var(--blue-color);
+  font-size: var(--font-small);
+}
+
+.video_info .text_container .hash_tag li {
+  margin-right: var(--spacing);
+}
+
+.video_info .text_container .title_container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.video_info .text_container .title_container .text {
+  font-size: var(--font-regular);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.video_info .text_container .viewers {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color)
+}
+
+.video_info .action_icon {
+  display: flex;
+  justify-content: space-around;
+  margin-top: var(--spacing);
+}
+
+.video_info .action_icon li {
+  display: flex;
+  flex-direction: column;
+}
+
+.video_info .action_icon i {
+  font-size: var(--font-large);
+  color: var(--grey-dark-color);
+}
+
+.video_info .action_icon span {
+  font-size: var(--font-small);
+  text-align: center;
+}
+
+.video_info .channel_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+  margin-top: var(--spacing);
+  padding: 0 var(--spacing);
+}
+
+.video_info .channel_info .title {
+  display: flex;
+  align-items: center;
+}
+
+.video_info .channel_info .title .avatar {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.video_info .channel_info .title .avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.video_info .channel_info .title .name {
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--spacing);
+}
+
+.video_info .channel_info .title .name .channel_name {
+  font-size: var(--font-medium);
+}
+
+.video_info .channel_info .title .name .subscribe {
+  font-size: var(--font-micro);
+  color: var(--grey-dark-color);
+}
+
+.video_info .channel_info .subscribe_button {
+  color: var(--red-color);
+  text-transform: uppercase;
+}
+
+.other_video {
+  margin-top: var(--spacing);
+}
+
+.other_video .up_next {
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+  margin: var(--spacing);
+}
+
+.other_video .video_list li {
+  display: flex;
+  margin: var(--spacing)
+}
+
+.other_video .video_list .image {
+  flex: 1 1 35%
+}
+
+.other_video .video_list .image img {
+  width: 100%;
+}
+
+.other_video .video_list .video_info {
+  flex: 1 1 60%;
+  margin-left: var(--spacing);
+  display: flex;
+  flex-direction: column;
+}
+
+.other_video .video_list .video_info .title {
+  font-size: var(--font-medium);
+}
+
+.other_video .video_list .video_info .name, .subscribe {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.other_video .video_list .more {
+  flex: 1 1 5%;
+  padding-left: var(--spacing);
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndList {
+    display: flex;
+  }
+}
+
+
